@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TokoMakeup — Toko Makeup Online</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">TokoMakeup</h1>
+      <nav class="nav">
+        <input id="search" type="search" placeholder="Cari produk..." aria-label="Cari produk">
+        <select id="categoryFilter">
+          <option value="all">Semua Kategori</option>
+        </select>
+        <button id="cartBtn" class="cart-btn">Keranjang (<span id="cartCount">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Temukan Makeup Favoritmu</h2>
+        <p>Produk berkualitas untuk tampilan yang memukau. Bebas ongkir di pembelian tertentu!</p>
+      </div>
+    </section>
+
+    <section class="container products-section">
+      <div id="products" class="products-grid"></div>
+    </section>
+  </main>
+
+  <!-- Cart modal / sidebar -->
+  <aside id="cartSidebar" class="cart-sidebar hidden" aria-hidden="true">
+    <button id="closeCart" class="close-btn">×</button>
+    <h3>Keranjang Anda</h3>
+    <ul id="cartItems" class="cart-items"></ul>
+    <div class="cart-footer">
+      <p>Subtotal: <strong id="cartTotal">Rp0</strong></p>
+      <button id="checkoutBtn" class="primary">Checkout</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 TokoMakeup. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
